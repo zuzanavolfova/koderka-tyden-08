@@ -1,0 +1,26 @@
+Rozšíření:
+Live Sass Compiler (Glenn Marks)
+
+POZOR existují dvě rozšíření stejného jména:
+
+1) Starší, od autora Ritwick Dey, už je nepodporované a neudržované, nefunguje s nejnovější verzí Sassu. Toto NECHCEME!
+
+2) Novější od autora Glenn Marks. Toto rozšíření CHCEME!
+
+----------------------------------------------------
+
+Standardně se výsledné CSS kompiluje do stejné složky,
+kde je zdrojové SCSS.
+
+Pokud chceme do jiné složky, musíme to nastavit
+v konfiguraci VS Code:
+
+"liveSassCompile.settings.formats": [
+	{
+		"format": "expanded",
+		"extensionName": ".css",
+		"savePath": null,
+		"savePathSegmentKeys": ["scss"],
+		"savePathReplaceSegmentsWith": "css"
+	}
+],
