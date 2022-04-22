@@ -4,7 +4,34 @@ html { box-sizing: border-box; }
 
 body {
 	font: 16px/1.5 sans-serif;
+	color: var(--mainColor);
 }
 
 /* ------------------------------------------------ */
+:root {
+--mainColor: #2699fb;
+--lightblue: #f1f9ff;
+}
 
+.grid {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	padding: 20px;
+}
+
+.left-side {
+	background-color: var(--lightblue);
+}
+
+.grid__column-half {
+	padding: 60px;
+	text-align: center;
+}
+
+.chapter {
+	text-transform: uppercase;
+}
+
+.article {
+	text-align: justify;
+}
