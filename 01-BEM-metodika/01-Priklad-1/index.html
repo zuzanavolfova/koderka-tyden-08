@@ -25,23 +25,43 @@
 
 	<h2>Komponenta s vnitřními elementy</h2>
 	<!-- Např. figure s obrázkem a popisem -->
-
+<figure class="photo"> 
+	<img class="photo__image" src="foto.jpg" alt="foto">
+	<figcaption class="photo__caption">Uzasna krajina</figcaption>
+</figure>
 
 
 	<h2>Komponenta s vnitřními elementy s modifikátorem</h2>
 	<!-- Obrázek ve figure má rámeček -->
 
+	<figure class="photo"> 
+		<img class="photo__image photo__image--border" src="foto.jpg" alt="foto">
+		<figcaption class="photo__caption">Autor obrazu</figcaption>
+	</figure>
 
+	<figure class="photo photo--inverted"> 
+		<img class="photo__image" src="foto.jpg" alt="foto">
+		<figcaption class="photo__caption">Uzasna krajina</figcaption>
+	</figure>
 
 
 	<h2>Komponenta s vnitřními vnořenými elementy</h2>
 	<!-- V popisu obrázku je vložená ještě citace -->
+	<figure class="photo"> 
+		<img class="photo__image photo__image--border" src="foto.jpg" alt="foto">
+		<figcaption class="photo__caption">Autor obrazu</figcaption>
 
+		<blackquote class="photo__quote">Tady neco autor rekl</blackquote>
+	</figure>
 
 
 	<h2>Vnořené komponenty</h2>
 	<!-- galerie fotek s popisem, tlačítka koupit -->
-
+	<figure class="photo"> 
+		<img class="photo__image" src="foto.jpg" alt="foto">
+		<figcaption class="photo__caption">Uzasna krajina</figcaption>
+		<button class="button button--primary">Koupit</button>
+	</figure>
 
 
 </body>
