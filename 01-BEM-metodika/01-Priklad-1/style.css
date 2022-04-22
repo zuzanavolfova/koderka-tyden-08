@@ -16,3 +16,27 @@ h2 {
 	#0077ff			primární barva
 	#c0c0c0			sekundární barva
 */
+
+:root {
+--primary: #0077ff;
+--secundary: #909eaf;
+}
+
+.button {
+	font-size: 16px;
+	padding: 10px 20px;
+	border: 1px solid silver;
+	background-color: green;
+}
+
+.button--primary {
+	background-color: var(--primary);
+	color: white;
+	border-color: var(--primary);
+}
+
+.button--secundary {
+	background-color: var(--secundary);
+	color: white;
+	border-color: var(--secundary);
+}
