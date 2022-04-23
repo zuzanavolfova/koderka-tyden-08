@@ -1,5 +1,16 @@
-$cervena: #ff4400;
-h1 {
-    color: $cervena
+$color-primary: #0095ff;
+$default-fonts: "Montserrat, sans-serif";
+
+header {
+    border: 5px solid $color-primary;
 }
 
+//hlavni nadpis
+
+h1 {
+    color: $color-primary //barva pisma
+}
+
+button {
+    background-color: $color-primary;
+}
