@@ -14,7 +14,32 @@ body {
 	background-color: #e74c3c;
 }
 
+@keyframes pohyb {
+	0% {
+		transform: translate(0,0);	
+	}
+	60%  {
+		transform: translate(600px,0);
+	border-radius: 0;
+	background-color: orange;	}
+	100% {
+		transform: translate(600px, 400px);
+		border-radius: 50%;
+		background-color: lime;
+	}
+}
 
+
+
+
+.kolecko {
+	/* animation: pohyb 3s; */
+	animation-name: pohyb;
+	animation-duration: 3s;
+	/* animation-delay: 2s; */
+	/* animation-iteration-count: infinite; */
+	animation-fill-mode: both;
+}
 /*
 @keyframes example {
 	from { color: red; }
@@ -24,7 +49,7 @@ body {
 animation-name: example;
 animation-duration: 4s;
 animation-delay: -2s;
-animation-iteration-count: infinite;
+animation-iteration-count: infinite; / kolikr8t chci animaci opakovat
 
 animation-direction:
 	normal - The animation is played as normal (forwards). This is default
